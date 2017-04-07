@@ -30,7 +30,7 @@ class todoList {
 	getList() {
 		if (_devMode) {
 			var todoListLength = this.todoListPointer.length;
-			console.clear();
+			console.log("");
 			console.log("DRN's SUPER TO-DO LIST API");
 			console.log("");
 			console.log("List Length: " + todoListLength);
@@ -69,6 +69,7 @@ class todoList {
 	}
 	
 	getCatByIndex( index ) {
+		console.log("Get Cat Request " + index);
 		return this.todoListPointer[index].getCategory();
 	}
 	
@@ -109,6 +110,7 @@ class todoList {
 	}
 	
 	editCatByIndex( index, catid ) {
+		console.log("Edit Cat Request " + index);
 		this.todoListPointer[index].setCategory( catid );
 	}
 	
@@ -133,6 +135,8 @@ class todoList {
 	}
 	
 	deleteCat( index ) {
+		console.log("Delete Cat Request " + index);
+		
 		//Do not delete null default cat
 		if ( (this.todoCategories.length > 1) && (index != 0) ) {
 			
@@ -147,7 +151,7 @@ class todoList {
 				}
 				
 				if ( catID > index ) {
-					this.editCatByIndex( catID, (catID - 1) );
+					this.editCatByIndex( listid, (catID - 1) );
 				}
 			}
 		

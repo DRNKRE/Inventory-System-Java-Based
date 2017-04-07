@@ -137,8 +137,10 @@ function userDelItem() {
 function updateAll() {
 	getCatToContainer_Radio();
 	getListToContainerByCat_Radio();
+	todoExample.getList();
 	document.getElementsByName('todoCat')[0].value="";
 	document.getElementsByName('todoDesc')[0].value="";
+	
 }
 
 //Init
