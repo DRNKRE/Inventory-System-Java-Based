@@ -62,9 +62,11 @@ html {
 
 .catFont {
 	font-weight: 600;
+	padding-bottom: 5px;
 }
 
 .itemFont {
+	margin-top: 0px;
 	padding-left: 0px;
 }
 
@@ -76,12 +78,25 @@ input {
 	border-radius:10px;
 }
 
-.newInputCat {
+.newInput {
 	color: lightgrey;
 	border-color: #bfbfbf;
 	
 	font-weight: 900;
 }
+
+.itemText {
+	right:50px;
+	margin-top: -8px;
+	position: absolute;
+}
+
+.itemButton {
+	right:20px;
+	margin-top: -11px;
+	position: absolute;
+}
+
 
 button {
 	background-color: transparent;
@@ -109,10 +124,38 @@ button {
 	color: red;
 }
 
+.itemButtomEd {
+	font-family: $std_font;
+	font-weight: 900;
+	//font-size: 20px;
+	
+	padding-top: 2px;
+	
+	text-shadow: 1px 1px grey;
+	
+	background-color: green;
+	color: white;
+}
+
+.itemButtomDel {
+	font-family: $std_font;
+	font-weight: 900;
+	//font-size: 20px;
+	
+	padding-top:2px;
+	
+	text-shadow: 1px 1px grey;
+	
+	background-color: red;
+	color: white;
+}
+
 .divider {
 	width: 500px;
 	margin-left: 0px;
 	height: 2px;
+	
+	margin-top: -16px;
 	
 	background-color: grey;
 }

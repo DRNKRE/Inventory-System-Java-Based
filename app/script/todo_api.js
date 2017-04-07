@@ -81,13 +81,11 @@ class todoList {
 		return this.todoListPointer.length;
 	}
 	
-	/* new */
 	getCatLength() {
 		return this.todoCategories.length;
 	}
 	
 	/* HTML Commands */
-	/* new */
 	getListToContainer( containerID ) {
 		var list_string;
 		
@@ -139,9 +137,17 @@ class todoList {
 		if ( (this.todoCategories.length > 1) && (index != 0) ) {
 			
 			//Check for anything that is in this cat and move it to null
+			//Also check to move everything above the deleted cat to the cat below
+			//  Everything moves down an index
 			for (var listid = 0; listid<this.getListLength(); listid++) {
-				if ( this.getCatByIndex( listid ) == index ) {
+				var catID = this.getCatByIndex( listid );
+				
+				if ( catID == index ) {
 					this.editCatByIndex( listid, 0 );
+				}
+				
+				if ( catID > index ) {
+					this.editCatByIndex( catID, (catID - 1) );
 				}
 			}
 		
