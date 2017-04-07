@@ -1,6 +1,134 @@
-.brunch {
-  font-family: -apple-system, Sans-Serif;
-  text-align: center;
-  font-size: 24pt;
-  color: #3f894a;
+$std_font: 'Muli', sans-serif;
+
+@mixin gradientBackground($gradientBegin, $gradientEnd) {
+    background: $gradientBegin;    
+    background: -webkit-linear-gradient(left top, $gradientBegin, $gradientEnd);
+    background: -o-linear-gradient(bottom right, $gradientBegin, $gradientEnd); 
+    background: -moz-linear-gradient(bottom right, $gradientBegin, $gradientEnd);
+	background: linear-gradient(to bottom right, $gradientBegin, $gradientEnd); 
+}
+
+
+html {
+	height: 100%;
+	@include gradientBackground( #2C5B89, #5E7994 );
+}
+
+.TITLE {
+	$width: 500px;
+
+	font-family: $std_font;
+	font-size: 50px;
+	text-align: center;
+	color: white;
+	
+	left: 50%;
+	
+	width: $width;
+	
+	margin-left: -$width/2;
+	
+	position:absolute;
+}
+
+#notes {
+	$width: 500px;
+	$x: 50%;
+	$y: 200px;
+	
+	@include gradientBackground( #FFFFFF, #DFDFDF );
+	
+	font-family: $std_font;
+	color: grey;
+	
+	
+	width: $width;
+	//height: 300px;
+	
+	left: $x;
+	top: $y;
+	
+	margin-left: -$width/2;
+	//margin-top: 120px;
+	
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom: 20px;
+	border-radius: 10px;
+	
+	position: absolute;
+
+}
+
+.catFont {
+	font-weight: 600;
+}
+
+.itemFont {
+	padding-left: 0px;
+}
+
+input {
+	background-color:transparent;
+	
+	border: 1px solid;
+	padding: 5px;
+	border-radius:10px;
+}
+
+.newInputCat {
+	color: lightgrey;
+	border-color: #bfbfbf;
+	
+	font-weight: 900;
+}
+
+button {
+	background-color: transparent;
+	border:none;
+}
+
+.addButton {
+	font-family: $std_font;
+	font-weight: 900;
+	font-size:23px;
+	
+	text-shadow: 1px 1px lightgrey;
+	
+	color: green;
+	
+}
+
+.subButton {
+	font-family: $std_font;
+	font-weight: 900;
+	font-size:23px;
+	
+	text-shadow: 1px 1px lightgrey;
+	
+	color: red;
+}
+
+.divider {
+	width: 500px;
+	margin-left: 0px;
+	height: 2px;
+	
+	background-color: grey;
+}
+
+.blackBG {
+	width: 540px;
+	margin-left: -20px;
+	height: 2px;
+	
+	background-color: grey;
+}
+
+.blueBG {
+	background-color: lightblue;
+}
+
+.pinkBG {
+	background-color: pink;
 }
