@@ -6,7 +6,17 @@ exports.files = {
       'app.js': /^app/
     }
   },
-  stylesheets: {joinTo: 'app.css'}
+  stylesheets: {
+	joinTo: 'app.css',
+	
+	order: {
+		before: [	"app/style/sub_itemlist.scss",
+				"app/style/sub_func.scss",
+				"app/style/style_main.scss"	]
+	}
+	
+	
+  }
 };
 
 exports.plugins = {

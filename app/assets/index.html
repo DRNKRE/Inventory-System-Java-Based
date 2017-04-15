@@ -1,63 +1,188 @@
 <!DOCTYPE html>
+
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Brunch</title>
-  <!--<link rel="stylesheet" href="/app.css">-->
-  
-  <style>
-  html{background-color: black;
-  color: green;}
-  </style>
-  
-  
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>DRNs Super TODO List API</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Muli:200,300,600,900" rel="stylesheet">
+	<link rel="stylesheet" href="/app.css">
 </head>
+
 <body>
-	<p>
-	How to use:<br>
-	Adding a new item to the to-do list.<br>
-	1. Create a new category typing a category into the first textbox. <br>
-	2. Select a category and type something in the second textbox. <br>
-	3. Click add to add to to-do list. <br>
-	NOTE: If a category isn't select, item will be placed in NULL.<br>
-	Editing an item on the to-do list. <br>
-	1. Select the item that you want to edit.<br>
-	2. Select the category you'd like to place the item in.<br>
-	3. Type the name that you like to set the modify item to.<br>
-	4. Click EDIT<br>
-	Delete an item<br>
-	1. Select an item you'd like to delete<br>
-	2. Click DEL<br>
-	Delete a category<br>
-	1. Select a category.<br>
-	2. Click Delete.<br>
-	NOTE: Any items in the category will be moved to null.<br>
-	NOTE: NULL can't be delete.<br>
-	</p>
-	<div id="app">
-		<p class="panelFont">
-		Category Control Panel<br></p>
 	
-		<input type="text" class="textinput" name="todoCat" value="Category">	
-		<button type="button" class="button" name="todoCatSubmit">ADD</button>
-		<button type="button" class="button textred" name="todoCatSubmit">DEL</button></br></br>
-		<div id="catContainer">
-  
-		</div>
+	<p class="TITLE">DRN's To-Do List<br>API Example</p>
 	
-		<p class="panelFont">List Control Panel<br></p>
-		<input type="text" class="textinput" name="todoDesc" value="To-Do">
+	<!-- Main ToDo Container -->
+	<div id="notes">
 	
-		<button type="button" class="button" name="todoAdd">ADD</button>
-		<button type="button" class="button textyellow" name="todoEdit">EDIT</button>
-		<button type="button" class="button textred" name="todoDel">DEL</button>
+		<!-- Control Panel -->
+		<p>
+			<input class="placeholderInput" type="text" name="categoryName" value="category">
+			<button type="button" class="addButton"> + </button>
+		</p>
+		
+		
+		<br>
+			<div class="divider blackBG"></div>
+		<br>
+		
+		
+		<!-- CATEGORES START HERE -->
 	
-		<div id="listContainer">
-  
-		</div>
+
+
+
+	
+		<!-- CATEGORY EXAMPLE -->
+		<input type="text" class="itemFontEdit catFont" value="Category Name">
+			<input class="placeholderInput itemText" type="text" name="categoryName" value="Add Item">
+			<button type="button" class="addButton itemButton"> + </button>
+		</input>
+
+		<div class="divider pinkBG"></div>
+		
+		
+		<!-- LIST ITEMS -->
+		<input type="text" class="itemFontEdit itemFont" value="List Item">
+		<div class="divider blueBG"></div>
+		
+		<!-- LIST ITEMS -->
+		<input type="text" class="itemFontEdit itemFont" value="List Item">
+		<div class="divider blueBG"></div>
+		
+		<!-- LIST ITEMS -->
+		<input type="text" class="itemFontEdit itemFont" value="List Item">
+		<div class="divider blueBG"></div>
+		
+		<!-- LIST ITEMS -->
+		<input type="text" class="itemFontEdit itemFont" value="List Item">
+		<div class="divider blueBG"></div>
+		
+		<!-- LIST ITEMS -->
+		<input type="text" class="itemFontEdit itemFont" value="List Item">
+		<div class="divider blueBG"></div>
+		
+		<!-- LIST ITEMS -->
+		<input type="text" class="itemFontEdit itemFont" value="List Item">
+		<div class="divider blueBG"></div>
+		
+		
+		
+		<br>
+		
+		
+		
+		
+		
+		<!-- CATEGORY EXAMPLE -->
+		<input type="text" class="itemFontEdit catFont" value="Category Name">
+			<input class="placeholderInput itemText" type="text" name="categoryName" value="Add Item">
+			<button type="button" class="addButton itemButton"> + </button>
+		</input>
+
+		<div class="divider pinkBG"></div>
+		
+		
+		<!-- LIST ITEMS -->
+		<input type="text" class="itemFontEdit itemFont" value="List Item">
+		<div class="divider blueBG"></div>
+		
+		<!-- LIST ITEMS -->
+		<input type="text" class="itemFontEdit itemFont" value="List Item">
+		<div class="divider blueBG"></div>
+		
+		<!-- LIST ITEMS -->
+		<input type="text" class="itemFontEdit itemFont" value="List Item">
+		<div class="divider blueBG"></div>
+		
+		<!-- LIST ITEMS -->
+		<input type="text" class="itemFontEdit itemFont" value="List Item">
+		<div class="divider blueBG"></div>
+		
+		<!-- LIST ITEMS -->
+		<input type="text" class="itemFontEdit itemFont" value="List Item">
+		<div class="divider blueBG"></div>
+		
+		<!-- LIST ITEMS -->
+		<input type="text" class="itemFontEdit itemFont" value="List Item">
+		<div class="divider blueBG"></div>
+				<!-- LIST ITEMS -->
+		<input type="text" class="itemFontEdit itemFont" value="List Item">
+		<div class="divider blueBG"></div>
+		
+		<!-- LIST ITEMS -->
+		<input type="text" class="itemFontEdit itemFont" value="List Item">
+		<div class="divider blueBG"></div>
+		
+		<!-- LIST ITEMS -->
+		<input type="text" class="itemFontEdit itemFont" value="List Item">
+		<div class="divider blueBG"></div>
+		
+		<!-- LIST ITEMS -->
+		<input type="text" class="itemFontEdit itemFont" value="List Item">
+		<div class="divider blueBG"></div>
+		
+		<!-- LIST ITEMS -->
+		<input type="text" class="itemFontEdit itemFont" value="List Item">
+		<div class="divider blueBG"></div>
+		
+		<!-- LIST ITEMS -->
+		<input type="text" class="itemFontEdit itemFont" value="List Item">
+		<div class="divider blueBG"></div>
+				<!-- LIST ITEMS -->
+		<input type="text" class="itemFontEdit itemFont" value="List Item">
+		<div class="divider blueBG"></div>
+		
+		<!-- LIST ITEMS -->
+		<input type="text" class="itemFontEdit itemFont" value="List Item">
+		<div class="divider blueBG"></div>
+		
+		<!-- LIST ITEMS -->
+		<input type="text" class="itemFontEdit itemFont" value="List Item">
+		<div class="divider blueBG"></div>
+		
+		<!-- LIST ITEMS -->
+		<input type="text" class="itemFontEdit itemFont" value="List Item">
+		<div class="divider blueBG"></div>
+		
+		<!-- LIST ITEMS -->
+		<input type="text" class="itemFontEdit itemFont" value="List Item">
+		<div class="divider blueBG"></div>
+		
+		<!-- LIST ITEMS -->
+		<input type="text" class="itemFontEdit itemFont" value="List Item">
+		<div class="divider blueBG"></div>
+				<!-- LIST ITEMS -->
+		<input type="text" class="itemFontEdit itemFont" value="List Item">
+		<div class="divider blueBG"></div>
+		
+		<!-- LIST ITEMS -->
+		<input type="text" class="itemFontEdit itemFont" value="List Item">
+		<div class="divider blueBG"></div>
+		
+		<!-- LIST ITEMS -->
+		<input type="text" class="itemFontEdit itemFont" value="List Item">
+		<div class="divider blueBG"></div>
+		
+		<!-- LIST ITEMS -->
+		<input type="text" class="itemFontEdit itemFont" value="List Item">
+		<div class="divider blueBG"></div>
+		
+		<!-- LIST ITEMS -->
+		<input type="text" class="itemFontEdit itemFont" value="List Item">
+		<div class="divider blueBG"></div>
+		
+		<!-- LIST ITEMS -->
+		<input type="text" class="itemFontEdit itemFont" value="List Item">
+		<div class="divider blueBG"></div>
+	
 	</div>
-  
-  <script src="/vendor.js"></script>
-  <script src="/app.js"></script>
-  <script>require('initialize');</script>
+		
+	<!-- JAVASCRIPT -->
+	<script src="/vendor.js"></script>
+	<script src="/app.js"></script>
+	<script>require('initialize');</script>
 </body>
+</html>

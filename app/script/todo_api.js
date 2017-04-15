@@ -171,6 +171,8 @@ class todoListItem {
 			this.catIndex = 0;
 		else
 			this.catIndex = cat;
+		
+		this._checked = 0;
 	}
 	
 	getItem() {

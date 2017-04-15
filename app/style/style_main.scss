@@ -1,0 +1,148 @@
+@import "sub_func.scss";
+@import "sub_bkgdtitle.scss";
+//@import "sub_itemlist.sccs";
+
+//Font of the category
+.catFont {
+	font-weight: 600;
+	padding-bottom: 5px;
+}
+
+//Font of the items
+.itemFont {
+	margin-top: 0px;
+	padding-left: 0px;
+}
+
+//Item List Style
+.itemFontEdit {
+	border: none;
+	padding: 0px;
+	padding-bottom: 18px;
+	border-radius: 0px;
+	
+	font-size: 16px;
+	font-weight: 300px;
+	font-family: $std_font;
+	color: grey;
+}
+
+//Style used for input text boxes
+input {
+	background-color:transparent;
+	
+	border: 1px solid;
+	padding: 5px;
+	border-radius:10px;
+}
+
+//Used for input color
+//Placeholder font for textbox description
+.placeholderInput {
+	color: lightgrey;
+	border-color: #bfbfbf;
+	font-weight: 900;
+}
+
+//Input font for when the user modifies textbox
+.newInput {
+	color: grey;
+	border-color: #bfbfbf;
+	font-weight: 900;
+}
+
+
+//Category Font Position
+.itemText {
+	right:50px;
+	margin-top: -8px;
+	position: absolute;
+}
+
+//Category Add Item Button Position
+.itemButton { 
+	right:20px;
+	margin-top: -11px;
+	position: absolute;
+}
+
+
+
+
+button {
+	background-color: transparent;
+	border:none;
+}
+
+.addButton {
+	font-family: $std_font;
+	font-weight: 900;
+	font-size:23px;
+	
+	text-shadow: 1px 1px lightgrey;
+	
+	color: green;
+	
+}
+
+.subButton {
+	font-family: $std_font;
+	font-weight: 900;
+	font-size:23px;
+	
+	text-shadow: 1px 1px lightgrey;
+	
+	color: red;
+}
+
+.itemButtomEd {
+	font-family: $std_font;
+	font-weight: 900;
+	//font-size: 20px;
+	
+	padding-top: 2px;
+	
+	text-shadow: 1px 1px grey;
+	
+	background-color: green;
+	color: white;
+}
+
+.itemButtomDel {
+	font-family: $std_font;
+	font-weight: 900;
+	//font-size: 20px;
+	
+	padding-top:2px;
+	
+	text-shadow: 1px 1px grey;
+	
+	background-color: red;
+	color: white;
+}
+
+.divider {
+	width: 500px;
+	margin-left: 0px;
+	height: 2px;
+	
+	margin-top: -16px;
+	
+	background-color: grey;
+}
+
+.blackBG {
+	width: 540px;
+	margin-left: -20px;
+	height: 2px;
+	
+	background-color: grey;
+}
+
+.blueBG {
+	background-color: lightblue;
+}
+
+.pinkBG {
+	background-color: pink;
+}

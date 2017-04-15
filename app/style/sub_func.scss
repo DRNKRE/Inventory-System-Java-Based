@@ -1,0 +1,9 @@
+$std_font: 'Muli', sans-serif;
+
+@mixin gradientBackground($gradientBegin, $gradientEnd) {
+    background: $gradientBegin;    
+    background: -webkit-linear-gradient(left top, $gradientBegin, $gradientEnd);
+    background: -o-linear-gradient(bottom right, $gradientBegin, $gradientEnd); 
+    background: -moz-linear-gradient(bottom right, $gradientBegin, $gradientEnd);
+	background: linear-gradient(to bottom right, $gradientBegin, $gradientEnd); 
+}
